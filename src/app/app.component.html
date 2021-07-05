@@ -1,0 +1,14 @@
+<div class="body">
+    <h1 class="header">BUDGET CALCULATOR</h1>
+    
+    <app-calculator></app-calculator>
+    <section class="value" >
+        {{ totalBudget }}
+    </section>
+    
+    <app-input-section (formSubmit)="addItem($event)"></app-input-section>
+    
+    <hr style="margin-top: 0;">
+    
+    <app-budget-items [budgetItems]="budgetItems" (delete)="onDeleteItems($event)"></app-budget-items>
+</div>

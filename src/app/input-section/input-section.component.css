@@ -1,0 +1,23 @@
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding: 20px;
+   
+    
+    
+}
+.amount{
+    display: flex;
+   width: 60%;
+    background-color: aliceblue;
+}
+
+.item{
+    display: flex;
+    width: 75%;
+    background-color: aliceblue;
+}
+.add{
+display: flex;
+}

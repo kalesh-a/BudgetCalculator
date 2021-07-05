@@ -1,0 +1,11 @@
+
+
+
+
+<form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
+  <div class="input">
+    <div><input type="number" required name="amount" class="form-control amount" placeholder="Amount" aria-label="Amount" [ngModel]="item.amount"></div>
+    <div><input type="text" required name="description" class="form-control item" placeholder="Description" aria-label="item" [ngModel]="item.description"></div>
+    <div><button type="submit" class="btn btn-primary add" [disabled]="!itemForm.valid">Add</button></div>
+  </div>
+</form>

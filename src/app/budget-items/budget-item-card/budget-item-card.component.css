@@ -1,0 +1,65 @@
+.root{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.x-icon{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    background-color: black;
+    background-image: url(../../../assets/delete_icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+.budget-item{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    color: white;
+    /* font-weight: bold; */
+    display: flex;
+    width: 100%;
+    /* background-color: cyan; */
+    padding: 10px;
+    margin: 20px 20px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-bottom: 0;
+}
+.description{
+    display: flex;
+    flex-grow: 1;
+    font-size: 18px;
+    margin-left: 5px;
+    align-items: center;
+}
+.amount{
+    height: 26px;
+    margin: 5px;
+    border-radius: 3px;
+}
+.expense p{
+    color: red;
+    font-weight: 500;
+}
+
+.expense .amount{
+    background-color: lightcoral;
+}
+
+.income p{
+    color: green;
+    font-weight: 500;
+}
+
+.income .amount{
+    background-color: lightgreen;
+}
